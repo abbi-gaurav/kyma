@@ -1,5 +1,5 @@
 module.exports = {
-    foo: function (event, context) {
+    handler: function (event, context) {
         return 'hello world';
     }
 }

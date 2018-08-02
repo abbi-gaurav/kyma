@@ -1,7 +1,6 @@
 ---
 title: Sample service deployment on local
 type: Getting Started
-internal: true
 ---
 
 ## Overview
@@ -14,7 +13,7 @@ This guide uses a standalone sample service written in the [Go](http://golang.or
 
 To use the Kyma cluster and install the example, download these tools:
 
-- [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/) 1.9.0
+- [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/) 1.10.0
 - [curl](https://github.com/curl/curl)
 
 ## Steps
@@ -66,7 +65,6 @@ Run the following command:
    ```bash
    kubectl apply -n stage -f https://github.com/raw/kyma-project/examples/master/gateway/service/api-with-auth.yaml
    ```
+After you apply this update, you must include a valid bearer ID token in the Authorization header to access the service.
 
 >**NOTE:** The update might take some time.
-
-Since now, to access the service, valid bearer ID token has to be used in the Authorization header.

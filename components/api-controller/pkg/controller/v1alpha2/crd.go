@@ -56,6 +56,9 @@ func Crd() *k8sApiExtensions.CustomResourceDefinition {
 									MinLength: itoi64(3),
 									MaxLength: itoi64(256),
 								},
+								"authenticationEnabled": {
+									Type: "boolean",
+								},
 								"authentication": {
 									Type: "array",
 									Items: &k8sApiExtensions.JSONSchemaPropsOrArray{
