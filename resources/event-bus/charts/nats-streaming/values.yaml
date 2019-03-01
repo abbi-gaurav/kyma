@@ -12,8 +12,8 @@ nats:
 natsStreaming:
   debug: true
   trace: false
-global:
   namespace: natss
+global:
   natsStreaming:
     fullname: nats-streaming
     persistence:
